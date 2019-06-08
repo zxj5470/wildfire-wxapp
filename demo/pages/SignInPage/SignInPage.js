@@ -1,9 +1,12 @@
 // pages/SignInPage/SignInPage.js
 /**
- * 给企业用户提供的登陆界面
+ * 给企业用户提供的注册界面
  * 负责收集信息并且post给服务器端
  */
-
+const app = getApp()
+const HOST = app.globalData.HOST
+const PORT = app.globalData.PORT
+const md5 = require("../../utils/md5")
 Page({
 
   /**
@@ -47,13 +50,20 @@ Page({
   signIn: function(){
     // 用于确认密码的if
     if (this.data.passwordInput == this.data.passwordConfirmInput){
-      console.log("ok");
-      /*
+      console.log(this.data.teamBelongInput);
       wx.request({
-        url: '',
+        url: `http://${HOST}:${PORT}/api/company/post`,
         method: 'POST',
+        header: {
+          'content-type': 'application/json'
+        },
         data: {
-
+          account: this.data.accountInput,
+          teamName: this.data.teamNameInput,
+          passwdmd5: md5.md5(this.data.passwordInput),
+          teamLeader: this.data.teamLeaderInput,
+          teamBelong: this.data.teamBelongInput,
+          teamIntro: this.data.teamIntroInput
         },
         success: function(res){
           console.log(res)
@@ -61,7 +71,7 @@ Page({
        fail: function(){
          console.log("wx.request SignInPage.js fail")
        }
-      })*/
+      })
     }else{
       console.log("wrong")
     }

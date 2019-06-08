@@ -1,20 +1,22 @@
 /**index.wxss**/
-.teamLogo{
-height: 600rpx;
+.teamLogo {
+  height: 600rpx;
   width: 600rpx;
-  background: url(http://tc.sinaimg.cn/maxwidth.2048/tc.service.weibo.com/p/mmbiz_qpic_cn/b8484686e727ff080fb7f5c0c5d69ea7.jpg) no-repeat;
+  background: url(http://tc.sinaimg.cn/maxwidth.2048/tc.service.weibo.com/p/mmbiz_qpic_cn/b8484686e727ff080fb7f5c0c5d69ea7.jpg)no-repeat;
   background-size: 100% 100%;
-  
+
 }
+
 .teaminfo {
-  height: 400rpx;
-  width: 600rpx;
+  height: 600rpx;
+  width: 100%;
 }
+
 .teamName {
   color: #aaa;
   margin-bottom: 10rpx;
   font-size: 30rpx;
-  
+
 }
 
 .teamLeader {
@@ -34,3 +36,8 @@ height: 600rpx;
   margin-bottom: 10rpx;
   font-size: 30rpx;
 }
+
+/*.toPerson{*/
+/*  position: relative;*/
+/*  bottom: 100rpx;*/
+/*}*/

@@ -5,6 +5,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
+import {NetworkRequestData} from "./index";
 
 // Common Types
 interface string2AnyMap {
@@ -45,6 +46,12 @@ interface AppOpts {
 	onError?: (msg: string) => void;
 
 	[key: string]: any;
+}
+
+export interface GlobalData {
+	PORT: string,
+	HOST: string
+	userInfo: userInfoOpts
 }
 
 interface IApp extends AppOpts {}
@@ -89,7 +96,8 @@ interface WxApiCallback<Res = undefined> {
  * Network APIs
  */
 // 发起请求
-type NetworkRequestData = string | object | ArrayBuffer;
+import './index';
+// type NetworkRequestData = string | object | ArrayBuffer;
 
 interface NetworkRequestRes {
 	data: NetworkRequestData;

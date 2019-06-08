@@ -3,9 +3,9 @@
   <text class="head">企业账号</text>
   <input type="text" name="acconut" bindinput="account"></input>
   <text class="head">密码</text>
-  <input type="text" name="password" bindinput="password"></input>
+  <input type="text" name="password" bindinput="password" type="password"></input>
   <text class="tip">{{logInTip}}</text>
 </view>
 
-<button bindtap='logIn'>确认登陆</button>
+<button bindtap='logIn' open-type='redirect'>确认登陆</button>
 <text class="head" bindtap='sign'>没有账号？点击注册</text>

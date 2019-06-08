@@ -40,12 +40,26 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 2,
 			"list": [
 				{
 					"id": 0,
 					"name": "login",
 					"pathName": "pages/logInPage/logInPage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "SignInPage",
+					"pathName": "pages/SignInPage/SignInPage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "groupPage",
+					"pathName": "pages/groupPage/groupPage",
 					"query": "",
 					"scene": null
 				}

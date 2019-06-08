@@ -1,4 +1,9 @@
 // pages/logInPage/logInPage.js
+const app = getApp()
+const HOST = app.globalData.HOST
+const PORT = app.globalData.PORT
+const md5 = require("../../utils/md5")
+
 Page({
 
   /**
@@ -20,30 +25,40 @@ Page({
 
 
   // 响应登陆按钮，POST给服务器账号密码并根据返回码确认是否俸禄，需根据接口和传输数据格式调整（url和data）
-  logIn: function(){
-    if ((this.data.account != '') && (this.data.password != '')){
-    console.log(this.data.account + "");  // 测试用log，可删除
-    /*wx.request({
-      url: '',
-      method: 'POST',
-      data: {
+  logIn: function () {
+    if ((this.data.account != '') && (this.data.password != '')) {
+      console.log(this.data.account + "");  // 测试用log，可删除
+      wx.request({
+        url: `http://${HOST}:${PORT}/api/company/login`,
+        method: 'POST',
+        data: {
+          username: this.data.account,
+          passwdmd5: md5.md5(this.data.password)
+        },
+        success: function (res) {
+          console.log(res.statusCode);
+          console.log(res.data);
+          const data = res.data;
+          if (data.status == 0) {
+            console.log(data.results);
+            app.globalData.companyInfo = data.results;
+            wx.redirectTo({
+              url:'../groupPage/groupPage'
+            })
+          }
+        },
+        fail: function () {
 
-      },
-      success: function(res){
-
-      },
-      fail: function(){
-
-      }
-    })*/
-    }else{
+        }
+      })
+    } else {
       console.log("fail") // 测试用log，可删除
     }
   },
 
   // 响应注册事件，跳转到注册界面
-  sign: function(){
-    wx.navigateTo({
+  sign: function () {
+    wx.redirectTo({
       url: '../SignInPage/SignInPage',
     })
   },
