@@ -1,0 +1,24 @@
+/* pages/groupMessage/group.wxss */
+.teamName {
+  color: #aaa;
+  margin-bottom: 10rpx;
+  font-size: 30rpx;
+}
+
+.teamLeader {
+  color: #aaa;
+  margin-bottom: 10rpx;
+  font-size: 30rpx;
+}
+
+.teamBelong {
+  color: #aaa;
+  margin-bottom: 10rpx;
+  font-size: 30rpx;
+}
+
+.teamIntro {
+  color: #aaa;
+  margin-bottom: 10rpx;
+  font-size: 30rpx;
+}

@@ -1,0 +1,30 @@
+/* pages/singlePage/singlePage.wxss */
+.personinfo {
+  height: 600rpx;
+  width: 600rpx;
+}
+
+.personName {
+  color: #aaa;
+  margin-bottom: 10rpx;
+  font-size: 30rpx;
+  
+}
+
+.personSex {
+  color: #aaa;
+  margin-bottom: 10rpx;
+  font-size: 30rpx;
+}
+
+.personClass {
+  color: #aaa;
+  margin-bottom: 10rpx;
+  font-size: 30rpx;
+}
+
+.personIntro {
+  color: #aaa;
+  margin-bottom: 10rpx;
+  font-size: 30rpx;
+}

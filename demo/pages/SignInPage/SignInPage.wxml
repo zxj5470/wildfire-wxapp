@@ -1,0 +1,23 @@
+<!--pages/SignInPage/SignInPage.wxml-->
+<view>
+  <text class="head">账号</text>
+  <input type="text" name='accountInput' bindinput="accountInput"></input>
+  <text class="head">密码</text>
+  <input type="text" name='passwordInput' bindinput="passwordInput"></input>
+  <text class="head">确认密码</text>
+  <input type="text" name='passwordConfirmInput' bindinput="passwordConfirmInput"></input>
+  <text class="head">组织名称</text>
+  <input type="text" name='teamNameInput' bindinput="teamNameInput"></input>
+  <text class="head">负责人</text>
+  <input type="text" name='teamLeaderInput' bindinput="teamLeaderInput"></input>
+  <text class="head">归属机构</text>
+  <input type="text" name='teamBelongInput' bindinput="teamBelongInput"></input>
+  <text class="head">组织简介</text>
+  <textarea type="text" name='teamIntroInput' bindinput="teamIntroInput"></textarea>
+</view>
+
+<view>
+<button bindtap='signIn'>确认注册</button>
+<button bindtap='cancelSignIn'>取消注册</button>
+</view>
+<text class="tip">{{signInTip}}</text>

@@ -1,0 +1,17 @@
+<!--pages/groupMessage/group.wxml-->
+<view class="teaminfo">
+    <text class="teamName">{{teamNameHead}}</text>
+    <input name="teamNameInput" type="text" bindinput="teamNameInput"></input>
+    <text class="teamLeader">{{teamLeaderHead}}</text>
+    <input name="teamLeaderInput" type="text" bindinupt="teamLeaderInput"></input>
+    <text class="teamBelong">{{teamBelongHead}}</text>
+    <input name="teamBelongInput" type="text" bindinput="teamBelongInput"></input>
+    <text class="teamIntro">{{teamIntroHead}}</text>
+    <textarea name="teamIntroInput" type="text" bindinput="teamIntroInput">
+    </textarea>
+  </view>
+
+<view>
+  <button bindtap='postData'>确认更改</button>
+  <button bindtap='cancelChange'>取消更改</button>
+</view>

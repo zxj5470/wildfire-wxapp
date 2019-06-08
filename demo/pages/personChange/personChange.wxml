@@ -1,0 +1,17 @@
+<!--pages/singleChange/singleChange.wxml-->
+<view class="personinfo">
+    <text class="personName">{{personNameHead}}</text>
+    <input name="personNameInput" type="text" bindinput="personNameInput"></input>
+    <text class="personSex">{{personSexHead}}</text>
+    <input name="personSexInput" type="text" bindinupt="personSexInput"></input>
+    <text class="personClass">{{personClassHead}}</text>
+    <input name="personClassInput" type="text" bindinput="personClassInput"></input>
+    <text class="personIntro">{{personIntroHead}}</text>
+    <textarea name="personIntroInput" bindinput="personIntroInput">
+    </textarea>
+  </view>
+
+  <view>
+  <button bindtap='postData'>确认更改</button>
+  <button bindtap='cancelChange'>取消更改</button>
+</view>

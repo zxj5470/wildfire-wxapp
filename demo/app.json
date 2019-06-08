@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/groupPage/groupPage",
+    "pages/logs/logs",
+    "pages/groupChange/groupChange",
+    "pages/personChange/personChange",
+    "pages/personPage/personPage",
+    "pages/SignInPage/SignInPage",
+    "pages/logInPage/logInPage"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

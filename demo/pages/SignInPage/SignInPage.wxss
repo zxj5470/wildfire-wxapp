@@ -1,0 +1,12 @@
+/* pages/SignInPage/SignInPage.wxss */
+.head{
+  color: #aaa;
+  margin-bottom: 10rpx;
+  size: 30rpx;
+}
+
+.tip{
+  color: #a00;
+  margin-top: 10rpx;
+  size: 30rpx;
+}
