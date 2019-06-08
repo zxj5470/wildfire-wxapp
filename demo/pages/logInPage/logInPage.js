@@ -58,7 +58,7 @@ Page({
 
   // 响应注册事件，跳转到注册界面
   sign: function () {
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../SignInPage/SignInPage',
     })
   },

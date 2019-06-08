@@ -40,19 +40,12 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": -1,
 			"list": [
 				{
 					"id": 0,
 					"name": "login",
 					"pathName": "pages/logInPage/logInPage",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "SignInPage",
-					"pathName": "pages/SignInPage/SignInPage",
 					"query": "",
 					"scene": null
 				},
@@ -67,6 +60,7 @@
 					"id": -1,
 					"name": "person",
 					"pathName": "pages/personPage/personPage",
+					"query": "",
 					"scene": null
 				}
 			]
