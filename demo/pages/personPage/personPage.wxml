@@ -1,35 +1,30 @@
 <!--pages/singlePage/singlePage.wxml-->
   <view class="personinfo">
-  <view class="personName">
-    <text>{{personNameHead}}</text>
-  </view>
-  <view>
+    <view class="head"><text>{{personNameHead}}</text>
+    </view>
+    <view>
     <text class="personName-input" type="text">{{personNameInput}}</text>
     </view>
     <view>
-    <text class="personSex">{{personSexHead}}</text>
+    <text class="head">{{personSexHead}}</text>
     </view>
     <view>
     <text class="personSex-input" type="text">{{personSexInput}}</text>
     </view>
     <view>
-    <text class="personClass">{{personClassHead}}</text>
+    <text class="head">{{personClassHead}}</text>
     </view>
     <view>
     <text class="personClass-input" type="text">{{personClassInput}}</text>
     </view>
     <view>
-    <text class="personIntro">{{personIntroHead}}</text>
+    <text class="head">{{personIntroHead}}</text>
     </view>
     <view>
     <text class="personIntro-input">{{personIntroInput}}</text>
   </view>
   </view>
 
-  <button bindtap='changeData'>
+  <button class="console" bindtap='changeData'>
   更改信息</button>
-
-  <!--跳转到个人信息界面，测试用，整合后请删除-->
-  <button bindtap='changeData'></button>
-
 

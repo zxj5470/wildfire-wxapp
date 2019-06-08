@@ -4,27 +4,13 @@
   width: 600rpx;
 }
 
-.personName {
-  color: #aaa;
-  margin-bottom: 10rpx;
-  font-size: 30rpx;
-  
-}
-
-.personSex {
+.head {
   color: #aaa;
   margin-bottom: 10rpx;
   font-size: 30rpx;
 }
 
-.personClass {
-  color: #aaa;
-  margin-bottom: 10rpx;
-  font-size: 30rpx;
-}
-
-.personIntro {
-  color: #aaa;
-  margin-bottom: 10rpx;
-  font-size: 30rpx;
+.console {
+  position: fixed;
+  bottom: 0;
 }
