@@ -1,7 +1,8 @@
 /* pages/SignInPage/SignInPage.wxss */
 .head{
-  color: #aaa;
-  margin-bottom: 10rpx;
+  color: rgb(51, 47, 47);
+  margin-bottom: 8rpx;
+  font-weight: bold;
   size: 30rpx;
 }
 
@@ -10,3 +11,9 @@
   margin-top: 10rpx;
   size: 30rpx;
 }
+/*input{*/
+/*  margin-top: 8rpx;*/
+/*  margin-bottom: 8rpx;*/
+/*  border-width: 3px;*/
+/*  border-color: #a00;*/
+/*}*/

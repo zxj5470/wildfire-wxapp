@@ -7,17 +7,13 @@
   <text class="head">确认密码</text>
   <input type="text" name='passwordConfirmInput' type='password' bindinput="passwordConfirmInput"></input>
   <text class="head">组织名称</text>
-  <input type="text" name='teamNameInput' bindinput="teamNameInput"></input>
+  <input type="text" name='teamNameInput' placeholder='选填' bindinput="teamNameInput"></input>
   <text class="head">负责人</text>
-  <input type="text" name='teamLeaderInput' bindinput="teamLeaderInput"></input>
+  <input type="text" name='teamLeaderInput' placeholder='选填' bindinput="teamLeaderInput"></input>
   <text class="head">归属机构</text>
-  <input type="text" name='teamBelongInput' bindinput="teamBelongInput"></input>
+  <input type="text" name='teamBelongInput' placeholder='选填' bindinput="teamBelongInput"></input>
   <text class="head">组织简介</text>
-  <textarea type="text" name='teamIntroInput' bindinput="teamIntroInput"></textarea>
-</view>
-
-<view>
+  <textarea type="text" name='teamIntroInput' placeholder='选填' bindinput="teamIntroInput"></textarea>
 <button bindtap='signIn'>确认注册</button>
 <button bindtap='cancelSignIn'>取消注册</button>
 </view>
-<text class="tip">{{signInTip}}</text>
