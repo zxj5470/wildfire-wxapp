@@ -3,6 +3,8 @@ const app = getApp()
 const HOST = app.globalData.HOST
 const PORT = app.globalData.PORT
 const md5 = require("../../utils/md5")
+const util = require("../../utils/util")
+const dateTimePicker = require('../../utils/dateTimePicker');
 
 Page({
 
@@ -13,6 +15,61 @@ Page({
     account: '',
     password: '',
     logInTip: '',
+
+    dateTime: null,
+    dateTimeArray: null,
+    tempDateTime:null,
+
+    dateTime1: null,
+    dateTimeArray1: null,
+    tempDateTime1:null,
+
+    startTime: null,
+    endTime: null
+  },
+
+  toTimeString(arr) {
+    arr[0] += 2017;
+    // arr[1] += 1;
+    arr[2] += 1;
+    const date = new Date(arr[0], arr[1], arr[2], arr[3], arr[4], arr[5]);
+    return util.formatTime(date);
+  },
+  changeDateTime(e) {
+    this.setData({dateTime: e.detail.value});
+    const t = this.data.dateTime;
+    t[5]=0
+    this.setData({
+      startTime: this.toTimeString(t)
+    });
+  },
+
+  changeDateTime1(e) {
+    this.setData({dateTime1: e.detail.value});
+    const t = this.data.dateTime1;
+    t[5]=0
+    this.setData({
+      endTime: this.toTimeString(t)
+    });
+  },
+  changeDateTimeColumn(e) {
+    let arr = this.data.dateTime, dateArr = this.data.dateTimeArray;
+    arr[e.detail.column] = e.detail.value;
+    dateArr[2] = dateTimePicker.getMonthDay(dateArr[0][arr[0]], dateArr[1][arr[1]]);
+    this.setData({
+      dateTimeArray: dateArr,
+      dateTime: arr
+    });
+  },
+  changeDateTimeColumn1(e) {
+    let arr = this.data.dateTime1, dateArr = this.data.dateTimeArray1;
+    arr[e.detail.column] = e.detail.value;
+    dateArr[2] = dateTimePicker.getMonthDay(dateArr[0][arr[0]], dateArr[1][arr[1]]);
+
+    this.setData({
+      dateTimeArray1: dateArr,
+      dateTime1: arr
+    });
   },
 
   // 数据同步函数
@@ -42,8 +99,8 @@ Page({
           if (data.status == 0) {
             console.log(data.results);
             app.globalData.companyInfo = data.results;
-            wx.navigateTo({
-              url:'../companyindex/Cindex'
+            wx.redirectTo({
+              url: '../groupPage/groupPage'
             })
           }
         },
@@ -68,7 +125,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
     onLoad: function (options) {
-
+    let obj = dateTimePicker.dateTimePicker(2017, 2028);
+    let obj1 = dateTimePicker.dateTimePicker(2017, 2028);
+    this.setData({
+      dateTime: obj.dateTime,
+      dateTimeArray: obj.dateTimeArray,
+      dateTimeArray1: obj1.dateTimeArray,
+      dateTime1: obj1.dateTime
+    });
   },
 
   /**

@@ -1,0 +1,23 @@
+<!--pages/companydetail/detail.wxml-->
+<view class="container">
+    <view class='title'>
+        <image class='head' src="/img/head.png"></image>
+        <text class='projectname'> {{projectName}}</text>
+
+        <text class='subtitle'>{{companyName}}</text>
+        <text class='time'>{{time}}</text>
+
+    </view>
+
+
+    <view class='projectdetail'>
+        <text> {{info}}</text>
+    </view>
+
+    <view class='status' bindtap='form'>
+        <text>
+            详细状态
+        </text>
+    </view>
+
+</view>

@@ -1,0 +1,25 @@
+<!--pages/userMoreInfo/MoreInfo.wxml-->
+<!--page3/page3.wxml-->
+<view class = "container">
+<view class= 'title'>
+<image class = 'head'src = "/img/head.png"> </image>
+<text class = 'projectname'> project's name</text>
+<text class = 'subtitle'>company name</text>
+<text class = 'time'>time</text>
+</view>
+
+<view class ='projectdetail' >
+<text> detaildetail of this pdetail of this projectetail of this rojectrojectetail of this roject of this pdetail of this projectetail of this rojectrojectetail of this roject</text>
+</view>
+
+<view class = 'bottom1'>
+<button class = 'schedule' bindtap='schedule'><image class = 'schedule' src = "/img/schedule.png"></image>
+</button>
+<button class = 'add'bindtap='joinIn'><image class = 'add' src = "/img/add.png"></image>
+</button>
+</view>
+
+
+
+
+</view>

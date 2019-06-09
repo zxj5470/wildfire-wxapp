@@ -1,0 +1,62 @@
+/* pages/companydetail/detail.wxss */
+.title{
+  display: inline-block;
+  border: 1px solid #efefef;
+}
+.title .head{
+ 
+  float: left;
+  width: 30%;
+  height: 17%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+
+}
+
+.title .projectname{
+  position: absolute;
+  top: 0px;
+  left: 32%;
+  font-size: 24px;
+
+}
+
+.title .subtitle{
+  position: absolute;
+  top: 1.9em;
+  left: 32%;
+  font-size: 16px;
+  
+}
+
+.title .time{
+    border: 0px solid darkgray;
+
+  position: absolute;
+  top: 14%;
+  left: 32%;
+  
+}
+
+
+.projectdetail{
+  
+  position: absolute;
+  top: 20%;
+  left: 1em;
+  width: 90%;
+  box-shadow: 4px 3px 10px grey;
+  word-break: break-all;
+  display: flex;
+  
+}
+
+.status{
+  text-align: right;
+  position: absolute;
+  right: 0;
+  bottom: 2em;
+  color: #0b0eec;
+  border-bottom: 1px solid #000;
+}

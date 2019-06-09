@@ -18,6 +18,9 @@ Page({
   },
   toPerson: function () {
     //登录
+    wx.switchTab({
+      url:'../personPage/personPage'
+    })
     wx.login({
       success: function (res) {
         //console.log(res.code);
@@ -35,9 +38,7 @@ Page({
             success(res) {
               console.log(res.data.results);
               console.log("跳转到普通用户的主界面");
-              // wx.redirectTo({
-              //   url:''
-              // })
+
             }
           })
         } else {

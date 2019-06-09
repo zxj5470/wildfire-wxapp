@@ -34,6 +34,7 @@ Page({
   // Show时进行页面加载，GET获取服务器端信息，显示在界面上，需要根据接口和数据传输格式调整（url和data）
   onShow: function () {
     const str = JSON.stringify(app.globalData.companyInfo);
+    console.log(str);
     app.globalData.companyInfo = JSON.parse(str);
     const companyInfo = JSON.parse(str);
     if (companyInfo != null) {

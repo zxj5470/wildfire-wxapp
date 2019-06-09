@@ -8,4 +8,4 @@
 </view>
 
 <button bindtap='logIn' type="primary" open-type='redirect'>确认登陆</button>
-<text class="head" bindtap='sign'>没有账号？<text class="sigin">点击注册</text></text>
+<text class="head" >没有账号？<text class="sigin" bindtap='sign'>点击注册</text></text>

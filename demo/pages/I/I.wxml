@@ -1,0 +1,22 @@
+<!--pages/I/I.wxml-->
+<view>
+
+ 
+<view class="table">
+
+ <block wx:for="{{listData}}" wx:key="{[code]}">
+  <view class="tr " wx:if="{{index % 2 == 0}}">
+    <view class="td">{{item.code}}</view>
+    <view class="td">{{item.text}}</view>
+    <view class="td">{{item.type}}</view>
+  </view>
+  
+  <view class="tr" wx:else>
+    <view class="td">{{item.code}}</view>
+    <view class="td">{{item.text}}</view>
+    <view class="td">{{item.type}}</view>
+ </view>
+ </block>
+</view>
+
+</view>>

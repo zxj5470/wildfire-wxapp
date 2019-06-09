@@ -1,0 +1,30 @@
+<!--page4/page4.wxml-->
+    <text class="companyName">{{nameHead}}</text>
+    <input class="companyName-input" type="text" bindinput="nameInput"></input>
+    <text class="deadline">{{deadlineHead}}</text>
+
+<picker mode="multiSelector" value="{{dateTime}}" bindchange="changeDateTime"
+        bindcolumnchange="changeDateTimeColumn" range="{{dateTimeArray}}">
+<view class="tui-picker-detail">
+    选择开始时间: {{dateTimeArray[0][dateTime[0]]}}/{{dateTimeArray[1][dateTime[1]]}}/{{dateTimeArray[2][dateTime[2]]}}
+    {{dateTimeArray[3][dateTime[3]]}}:{{dateTimeArray[4][dateTime[4]]}}
+</view>
+</picker>
+<picker mode="multiSelector" value="{{dateTime1}}" bindchange="changeDateTime1" bindcolumnchange="changeDateTimeColumn1"
+        range="{{dateTimeArray1}}">
+<view class="tui-picker-detail">
+    选择结束时间: {{dateTimeArray1[0][dateTime1[0]]}}/{{dateTimeArray1[1][dateTime1[1]]}}/{{dateTimeArray1[2][dateTime1[2]]}}
+    {{dateTimeArray1[3][dateTime1[3]]}}:{{dateTimeArray1[4][dateTime1[4]]}}
+</view>
+</picker>
+
+    <text class="description">{{descriptionHead}}</text>
+    <input class="description-input" type="text" bindinput="descriptionInput"></input>
+    <text class="schedule">{{scheduleHead}}</text>
+    <textarea class="schedule-inut" bindinput="scheduleInput">
+    </textarea>
+
+  <view>
+  <button bindtap='postData' type="primary">提交</button>
+</view>
+

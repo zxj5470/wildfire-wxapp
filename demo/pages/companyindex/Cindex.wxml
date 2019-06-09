@@ -1,0 +1,22 @@
+<!--pages/companyindex/Cindex.wxml-->
+<!--    <text wx:for="{{list}}">{{item.id}}</text>-->
+
+<block wx:for="{{list}}" wx:key="[code]">
+    <view data-id='{{item.id}}' bindtap="tap">
+    <text class="td"  >活动名称： {{item.title}}\n</text>
+    <text class="td">时间： {{item.startTime}}\n\n</text>
+    </view>
+</block>
+
+<view class="bottom">
+<button bindtap='published'>
+    <image style="width : 50px; height : 50px " src='/img/event.png'></image>
+</button>
+<button bindtap='add'>
+    <image class="add" style="width : 50px; height : 50px " src='/img/plus.png'></image>
+</button>
+<button bindtap='my'>
+    <image style="width : 50px; height : 50px " src='/img/I.png'></image>
+</button>
+</view>
+

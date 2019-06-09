@@ -1,0 +1,32 @@
+/* pages/companyindex/Cindex.wxss */
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  height: 6%;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  bottom: 20rpx;
+  margin-bottom: 10rpx;
+  border-top: 1px solid#776e6e;
+  border-radius: 6%;
+}
+
+.add {
+  height: 8%;
+  width: 100px;
+  top: -3px;
+  background: #fff;
+}
+
+button::after {
+  border: none;
+}
+
+.newevent {
+  font-size: 48px;
+  margin: 24px;
+}
+
+
+

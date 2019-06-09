@@ -1,0 +1,104 @@
+/* pages/userMoreInfo/MoreInfo.wxss */
+
+.title{
+display: inline-block;
+
+}
+.title .head{
+float: left;
+width: 30%;
+height: 17%;
+position: absolute;
+left: 0px;
+top: 0px;
+
+}
+
+.title .projectname{
+position: absolute;
+top: 0px;
+left: 32%;
+font-size: 24px;
+
+}
+
+.title .subtitle{
+position: absolute;
+top: 1.9em;
+left: 32%;
+font-size: 16px;
+}
+
+.title .time{
+position: absolute;
+top: 14%;
+left: 32%;
+}
+
+
+.projectdetail{
+position: absolute;
+top: 20%;
+left: 1em;
+width: 90%;
+height: 60%;
+box-shadow: 4px 3px 10px grey;
+word-break: break-all;
+display: flex;
+}
+
+.bottom{
+display : flex;
+justify-content: space-between;
+height: 6%;
+width: 100%;
+background:#fff;
+position: fixed;
+left: 0px;
+bottom: 0px;
+border-top: 1px solid #776e6e ;
+}
+
+.bottom1 {
+display : flex;
+justify-content: space-between;
+height: 18%;
+width: 100%;
+background:#fff;
+position: fixed;
+left: 0px;
+bottom: 0px;
+border-top: 1px solid #776e6e ;
+}
+
+.bottom1 .schedule{ 
+position: relative;
+left: 10%;
+top: -1%;
+width : 39%;
+height : 68%;
+margin: 0em;
+padding: 0em;
+}
+
+.bottom1 .add{ 
+position: relative;
+left: -10%;
+top: 0%;
+width : 39%;
+height : 64%;
+margin: 0em;
+padding: 0em;
+}
+
+.block{
+display: inline-block;
+flex-direction: row;
+height: 10%;
+width: 30%;
+border: 1px solid #776e6e;
+position: absolute;
+left: 10%;
+top: 82%;
+padding: 0em;
+}

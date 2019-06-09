@@ -1,0 +1,17 @@
+<!--page5/companydetail.wxml-->
+<view class="container">
+  <view class=  "placeholder"> </view>
+  <view class= "title">
+    <text >已发布</text>
+  </view>
+
+  <scroll-view scroll-y = "true" style = "height: 100%">
+    <button class='block' bindtap='detail'>
+
+      <image class="logo" style="width : 30%; height : 90% " src = '/img/activity.png'></image>
+      <text class = "eventName" style="width : 60%; height : 70% ">{{eventName}}</text>
+      <image class="arrow" style="width : 1em; height : 1em " src = '/img/arrow.png'></image>
+
+    </button>
+  </scroll-view>
+</view>

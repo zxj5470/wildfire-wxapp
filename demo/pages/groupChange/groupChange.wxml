@@ -5,13 +5,13 @@
     <text class="teamLeader">{{teamLeaderHead}}</text>
     <input name="teamLeaderInput" type="text" value='{{teamLeaderInput}}' bindinupt="teamLeaderInput"></input>
     <text class="teamBelong">{{teamBelongHead}}</text>
-    <input name="teamBelongInput" type="text" value='{{teamBelongInput}}'  bindinput="teamBelongInput"></input>
+    <input name="teamBelongInput" type="text" value='{{teamBelongInput}}' bindinput="teamBelongInput"></input>
     <text class="teamIntro">{{teamIntroHead}}</text>
     <textarea name="teamIntroInput" type="text" bindinput="teamIntroInput" value='{{teamIntroInput}}'>
     </textarea>
-  </view>
+</view>
 
 <view>
-  <button bindtap='postData'>确认更改</button>
-  <button bindtap='cancelChange'>取消更改</button>
+<button bindtap='postData' type="primary">确认更改</button>
+<button bindtap='cancelChange'>取消更改</button>
 </view>

@@ -1,0 +1,26 @@
+/* page4/page4.wxss */
+
+
+.companyName {
+  color: #aaa;
+  margin-bottom: 10rpx;
+  font-size: 30rpx;
+}
+
+.deadline {
+  color: #aaa;
+  margin-bottom: 10rpx;
+  font-size: 30rpx;
+}
+
+.description {
+  color: #aaa;
+  margin-bottom: 10rpx;
+  font-size: 30rpx;
+}
+
+.schedule {
+  color: #aaa;
+  margin-bottom: 10rpx;
+  font-size: 30rpx;
+}

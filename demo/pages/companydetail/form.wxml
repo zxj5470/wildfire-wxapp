@@ -1,0 +1,20 @@
+<!--pages/companydetail/form.wxml-->
+
+<view class = 'holder'>
+   <view class="table">
+
+ <block wx:for="{{listData}}" wx:key="{[code]}">
+  <view class="tr " wx:if="{{index % 2 == 0}}">
+    <view class="td">{{item.start}}</view>
+    <view class="td">{{item.end}}</view>
+    <view class="td">{{item.status}}</view>
+  </view>
+  
+  <view class="tr" wx:else>
+    <view class="td">{{item.start}}</view>
+    <view class="td">{{item.end}}</view>
+    <view class="td">{{item.status}}</view>
+ </view>
+ </block>
+</view>
+</view>
