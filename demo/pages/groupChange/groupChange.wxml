@@ -1,13 +1,13 @@
 <!--pages/groupMessage/group.wxml-->
 <view class="teaminfo">
     <text class="teamName">{{teamNameHead}}</text>
-    <input name="teamNameInput" type="text" bindinput="teamNameInput"></input>
+    <input name="teamNameInput" type="text" bindinput="teamNameInput" value='{{teamNameInput}}'></input>
     <text class="teamLeader">{{teamLeaderHead}}</text>
-    <input name="teamLeaderInput" type="text" bindinupt="teamLeaderInput"></input>
+    <input name="teamLeaderInput" type="text" value='{{teamLeaderInput}}' bindinupt="teamLeaderInput"></input>
     <text class="teamBelong">{{teamBelongHead}}</text>
-    <input name="teamBelongInput" type="text" bindinput="teamBelongInput"></input>
+    <input name="teamBelongInput" type="text" value='{{teamBelongInput}}'  bindinput="teamBelongInput"></input>
     <text class="teamIntro">{{teamIntroHead}}</text>
-    <textarea name="teamIntroInput" type="text" bindinput="teamIntroInput">
+    <textarea name="teamIntroInput" type="text" bindinput="teamIntroInput" value='{{teamIntroInput}}'>
     </textarea>
   </view>
 

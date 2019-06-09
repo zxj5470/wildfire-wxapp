@@ -1,4 +1,7 @@
 // pages/groupMessage/group.js
+const app = getApp()
+const HOST = app.globalData.HOST
+const PORT = app.globalData.PORT
 Page({
 
   /**
@@ -35,18 +38,32 @@ Page({
 
   // 信息更改函数 PUT请求 需要根据接口和数据传输格式进行调整（url和data）
   postData: function () {
-    console.log(this.data.teamNameInput); // 测试用log 可删除
-    /*
+    const companyInfo = app.globalData.companyInfo;
+    const info = {
+      id: companyInfo.id,
+      account: companyInfo.account,
+      teamName: this.data.teamNameInput,
+      teamBelong: this.data.teamBelongInput,
+      teamLeader: this.data.teamLeaderInput,
+      teamIntro: this.data.teamIntroInput
+    }
+
     wx.request({
-      url: '',
+      url: `http://${HOST}:${PORT}/api/company/put`,
       method: 'PUT',
-      data:{
-
-
-      },
+      data: info,
       success: function (res) {
         if (res.statusCode == 200) {
           console.log(res.data);
+          const data = res.data;
+          if (data.status == 0) {
+            if (data.results == true) {
+              app.globalData.companyInfo = info;
+              wx.navigateBack({})
+            } else {
+              wx.showToast({title: '超出长度，修改失败', icon: 'none'})
+            }
+          }
         } else {
           console.log("groupChange.js wx.request statusCode" + res.statusCode);
         }
@@ -54,13 +71,12 @@ Page({
       fail: function () {
         console.log("groupChange.js wx.request fail");
       }
-    })*/
+    })
   },
 
   // 响应返回按钮，返回数据呈现界面
-  cancelChange : function(){
-    wx.navigateBack({
-    })
+  cancelChange: function () {
+    wx.navigateBack({})
   },
 
 
@@ -75,7 +91,20 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    const str = JSON.stringify(app.globalData.companyInfo);
+    app.globalData.companyInfo = JSON.parse(str);
+    // const str = JSON.stringify({account: "unique", teamName: "联创", teamBelong: "华科", teamLeader: "组织者", teamIntro: "简介"});
+    const companyInfo = JSON.parse(str);
+    console.log(companyInfo);
+    // const companyInfo = JSON.parse(str);
+    if (companyInfo != null) {
+      this.setData({
+        teamNameInput: companyInfo.teamName,
+        teamLeaderInput: companyInfo.teamLeader,
+        teamBelongInput: companyInfo.teamBelong,
+        teamIntroInput: companyInfo.teamIntro,
+      })
+    }
   },
 
   /**
