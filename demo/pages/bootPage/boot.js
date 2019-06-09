@@ -2,7 +2,7 @@
 const app = getApp()
 const HOST = app.globalData.HOST
 const PORT = app.globalData.PORT
-
+const util = require('../../utils/util')
 Page({
 
   /**
@@ -12,8 +12,10 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-  },
 
+    imageWidth:320,
+    imageHeight:320
+  },
   toPerson: function () {
     //登录
     wx.login({

@@ -1,11 +1,11 @@
 /* pages/bootPage/boot.wxss */
-.logo{
-  width: 650rpx;
-  height: 650rpx;
-  background: url(http://tc.sinaimg.cn/maxwidth.2048/tc.service.weibo.com/p/mmbiz_qpic_cn/b8484686e727ff080fb7f5c0c5d69ea7.jpg)no-repeat;
-  background-size: 100% 100%;
+image{
+  /*width: 600rpx;*/
+  /*height: 600rpx;*/
+  /*background: url(http://tc.sinaimg.cn/maxwidth.2048/tc.service.weibo.com/p/mmbiz_qpic_cn/b8484686e727ff080fb7f5c0c5d69ea7.jpg)no-repeat;*/
+  /*background-size: 100% 100%;*/
 }
 
-.console{
-
+button{
+  margin: 20rpx 40rpx;
 }

@@ -1,8 +1,8 @@
 <!--pages/bootPage/boot.wxml-->
-<view class="logo">
+<view class='container'>
+    <image src="/unique.jpg" style="width: {{imageWidth}}px; height: {{imageHeight}}px;"></image>
 </view>
-
-<view class="console">
+    <view class="console">
     <button bindtap='toGroup'>企业用户</button>
-    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">个人用户</button>
+    <button type="primary" open-type="getUserInfo" bindgetuserinfo="getUserInfo">个人用户</button>
 </view>
