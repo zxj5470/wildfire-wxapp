@@ -12,12 +12,13 @@ Page({
     personIntroHead: '简介',
 
     // 输入内容
-    personNameInput: null,
-    personClassInput: null,
-    personSexInput: null,
-    personIntroInput: null,
+    personNameInput: '',
+    personClassInput: '',
+    personSexInput: '',
+    personIntroInput: '',
   },
 
+  // 数据绑定函数
   personNameInput: function (e) {
     this.data.personNameInput = e.detail.value;
   },
