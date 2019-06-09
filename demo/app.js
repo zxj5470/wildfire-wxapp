@@ -34,7 +34,7 @@ App({
     })
   },
   globalData: {
-    HOST: "10.10.70.227",
+    HOST: "172.20.10.5",
     PORT: "8102",
     userInfo: null,
     companyInfo: null

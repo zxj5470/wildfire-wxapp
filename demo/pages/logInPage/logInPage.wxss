@@ -1,12 +1,24 @@
 /* pages/logInPage/logInPage.wxss */
+.main{
+  margin-top: 50rpx;
+}
 .head{
   color: #aaa;
-  margin-bottom: 10rpx;
+  margin: 20rpx 40rpx;
   size: 30rpx;
 }
 
+input{
+  margin: 20rpx 40rpx;
+}
+button{
+  margin: 20rpx 40rpx;
+}
 .tip{
   color: #a00;
-  margin-top: 10rpx;
+  margin: 20rpx 40rpx;
   size: 30rpx;
+}
+.sigin{
+  color: #1f6aaa;
 }

@@ -1,5 +1,5 @@
 <!--pages/logInPage/logInPage.wxml-->
-<view>
+<view class="main">
   <text class="head">企业账号</text>
   <input type="text" name="acconut" bindinput="account"></input>
   <text class="head">密码</text>
@@ -7,5 +7,5 @@
   <text class="tip">{{logInTip}}</text>
 </view>
 
-<button bindtap='logIn' open-type='redirect'>确认登陆</button>
-<text class="head" bindtap='sign'>没有账号？点击注册</text>
+<button bindtap='logIn' type="primary" open-type='redirect'>确认登陆</button>
+<text class="head" bindtap='sign'>没有账号？<text class="sigin">点击注册</text></text>

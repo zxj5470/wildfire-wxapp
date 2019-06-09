@@ -48,7 +48,7 @@ Page({
   },
 
   toGroup: function () {
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../logInPage/logInPage'
     })
   },

@@ -1,7 +1,13 @@
 {
   "pages": [
+    "pages/companyindex/Cindex",
+    "pages/index/index",
+    "pages/changeProject/changeProject",
+    "pages/more/more",
+    "pages/userMoreInfo/MoreInfo",
     "pages/groupPage/groupPage",
     "pages/logs/logs",
+    "pages/mine/mine",
     "pages/groupChange/groupChange",
     "pages/personChange/personChange",
     "pages/personPage/personPage",
@@ -11,9 +17,34 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#999999",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white"
   },
-  "sitemapLocation": "sitemap.json"
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#35495e",
+    "borderStyle": "white",
+    "backgroundColor": "#f9f9f9",
+    "list": [
+      {
+        "text": "项目",
+        "pagePath": "pages/index/index",
+        "iconPath": "img/event.png",
+        "selectedIconPath": "img/event.png"
+      },
+      {
+        "text": "更多",
+        "pagePath": "pages/more/more",
+        "iconPath": "img/more.png",
+        "selectedIconPath": "img/more.png"
+      },
+      {
+        "text": "我",
+        "pagePath": "pages/personPage/personPage",
+        "iconPath": "img/I.png",
+        "selectedIconPath": "img/I.png"
+      }
+    ]
+  }
 }
