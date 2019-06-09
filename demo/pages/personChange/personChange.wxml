@@ -1,14 +1,17 @@
 <!--pages/singleChange/singleChange.wxml-->
 <view class="personinfo">
-    <text class="personName">{{personNameHead}}</text>
-    <input name="personNameInput" type="text" bindinput="personNameInput"></input>
-    <text class="personSex">{{personSexHead}}</text>
-    <input name="personSexInput" type="text" bindinupt="personSexInput"></input>
-    <text class="personClass">{{personClassHead}}</text>
-    <input name="personClassInput" type="text" bindinput="personClassInput"></input>
-    <text class="personIntro">{{personIntroHead}}</text>
-    <textarea name="personIntroInput" bindinput="personIntroInput">
-    </textarea>
+    <text class="head">{{personNameHead}}</text>
+    <input name="personNameInput" type="text" bindinput="personNameInput"
+           value="personNameInput"></input>
+    <text class="head">{{personSexHead}}</text>
+    <input name="personSexInput" type="text" bindinupt="personSexInput"
+           value="personSexInput"></input>
+    <text class="head">{{personClassHead}}</text>
+    <input name="personClassInput" type="text" bindinput="personClassInput"
+    value="personClassInput"></input>
+    <text class="head">{{personIntroHead}}</text>
+    <textarea name="personIntroInput" bindinput="personIntroInput"
+    value="personIntroInput"></textarea>
   </view>
 
   <view>

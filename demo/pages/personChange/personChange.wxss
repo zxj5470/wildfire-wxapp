@@ -1,23 +1,5 @@
 /* pages/singleChange/singleChange.wxss */
-.personName {
-  color: #aaa;
-  margin-bottom: 10rpx;
-  font-size: 30rpx;
-}
-
-.personSex {
-  color: #aaa;
-  margin-bottom: 10rpx;
-  font-size: 30rpx;
-}
-
-.personClass {
-  color: #aaa;
-  margin-bottom: 10rpx;
-  font-size: 30rpx;
-}
-
-.personIntro {
+.head {
   color: #aaa;
   margin-bottom: 10rpx;
   font-size: 30rpx;
