@@ -6,7 +6,8 @@
     "pages/personChange/personChange",
     "pages/personPage/personPage",
     "pages/SignInPage/SignInPage",
-    "pages/logInPage/logInPage"
+    "pages/logInPage/logInPage",
+    "pages/bootPage/boot"
   ],
   "window": {
     "backgroundTextStyle": "light",

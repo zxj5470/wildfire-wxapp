@@ -67,6 +67,9 @@ Page({
         },
         success: function(res){
           console.log(res)
+          wx.redirectTo({
+            url: '../logInPage/logInPage',
+          })
        },
        fail: function(){
          console.log("wx.request SignInPage.js fail")

@@ -24,7 +24,7 @@ Page({
   },
 
 
-  // 响应登陆按钮，POST给服务器账号密码并根据返回码确认是否俸禄，需根据接口和传输数据格式调整（url和data）
+  // 响应登陆按钮，POST给服务器账号密码并根据返回码确认是否登陆，需根据接口和传输数据格式调整（url和data）
   logIn: function () {
     if ((this.data.account != '') && (this.data.password != '')) {
       console.log(this.data.account + "");  // 测试用log，可删除
@@ -67,7 +67,7 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+    onLoad: function (options) {
 
   },
 
