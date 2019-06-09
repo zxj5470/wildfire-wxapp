@@ -1,38 +1,38 @@
 <!--index.wxml-->
-<view class="teamLogo">
-</view>
 <view class="teaminfo">
-<view class="teamName">
-    <text>{{teamNameHead}}</text>
-</view>
-<view>
-    <text class="teamName-input" type="text">{{teamNameInput}}</text>
-</view>
-<view>
-    <text class="teamLeader">{{teamLeaderHead}}</text>
-</view>
-<view>
-    <text class="teamLeader-input" type="text">{{teamLeaderInput}}</text>
-</view>
-<view>
-    <text class="teamBelong">{{teamBelongHead}}</text>
-</view>
-<view>
-    <text class="teamBelong-input" type="text">{{teamBelongInput}}</text>
-</view>
-<view>
-    <text class="teamIntro">{{teamIntroHead}}</text>
-</view>
-<view>
-    <text class="teamIntro-input">{{teamIntroInput}}</text>
+    <view class="teamLogo"></view>
+    <view class="teamName">
+        <text>{{teamNameHead}}</text>
+    </view>
+    <view>
+        <text class="teamName-input" type="text">{{teamNameInput}}</text>
+    </view>
+    <view>
+        <text class="teamLeader">{{teamLeaderHead}}</text>
+    </view>
+    <view>
+        <text class="teamLeader-input" type="text">{{teamLeaderInput}}</text>
+    </view>
+    <view>
+        <text class="teamBelong">{{teamBelongHead}}</text>
+    </view>
+    <view>
+        <text class="teamBelong-input" type="text">{{teamBelongInput}}</text>
+    </view>
+    <view>
+        <text class="teamIntro">{{teamIntroHead}}</text>
+    </view>
+    <view>
+        <text class="teamIntro-input">{{teamIntroInput}}</text>
+    </view>
 </view>
 
-<button bindtap='changeData'>
+
+<button class="console" bindtap='changeData'>
     更改信息
 </button>
 
 <!--跳转界面，测试用，整合后请删除-->
-<button bindtap='toPerson' class="toPerson">个人信息界面</button>
 
-</view>
+
 
