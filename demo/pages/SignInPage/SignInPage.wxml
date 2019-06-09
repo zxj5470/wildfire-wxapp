@@ -14,6 +14,6 @@
   <input type="text" name='teamBelongInput' placeholder='选填' bindinput="teamBelongInput"></input>
   <text class="head">组织简介</text>
   <textarea type="text" name='teamIntroInput' placeholder='选填' bindinput="teamIntroInput"></textarea>
-<button bindtap='signIn'>确认注册</button>
+<button bindtap='signIn' type="primary">确认注册</button>
 <button bindtap='cancelSignIn'>取消注册</button>
 </view>
