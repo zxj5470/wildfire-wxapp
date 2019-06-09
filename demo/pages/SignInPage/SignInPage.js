@@ -47,9 +47,20 @@ Page({
   },
 
   // 响应注册按钮，把信息传递POST给服务器端用于注册，需要根据接口和数据传输格式更改（url和data）
-  signIn: function(){
-    // 用于确认密码的if
-    if (this.data.passwordInput == this.data.passwordConfirmInput){
+  signIn: function () {
+    function toast(str) {
+      wx.showToast({title: str, icon: 'none'})
+    }
+
+// 用于确认密码的if
+    if (this.data.accountInput == '') {
+      toast("账号不能为空");
+      return;
+    } else if (this.data.passwordInput == '') {
+      toast("密码不能为空")
+      return;
+    }
+    if (this.data.passwordInput == this.data.passwordConfirmInput) {
       console.log(this.data.teamBelongInput);
       wx.request({
         url: `http://${HOST}:${PORT}/api/company/post`,
@@ -67,9 +78,13 @@ Page({
         },
         success: function(res){
           console.log(res)
-          wx.redirectTo({
-            url: '../logInPage/logInPage',
-          })
+          const data = res.data;
+          if (data.status == 0 && data.results == true) {
+            wx.showToast({title:'注册成功'})
+            wx.redirectTo({
+              url: '../logInPage/logInPage',
+            })
+          }
        },
        fail: function(){
          console.log("wx.request SignInPage.js fail")
